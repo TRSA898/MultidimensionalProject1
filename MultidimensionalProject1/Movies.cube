@@ -1,0 +1,1469 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f874b2ee-e743-4aa3-9fac-95310c0d3a90" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Movies</ID>
+  <Name>Movies</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="16cbfd94-7b26-49cc-9e06-e39e57578dd8">
+      <ID>Film</ID>
+      <Name>Film</Name>
+      <DimensionID>Film</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f5107915-7be8-43a3-ae0e-9392023ee16b">
+          <AttributeID>Film ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7376abe4-c734-4ae0-b336-dbb143f41eb1">
+          <AttributeID>Studio ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b62cc616-96c2-416a-b3d8-4bcc730033be">
+          <AttributeID>Director ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a1a45a25-bf22-4fa5-b710-145d98740f27">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8666a33f-01d7-4ce1-accd-a95d2e78c686">
+          <AttributeID>Language ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5a1a11c0-cd90-407b-9e8e-b82520b9e59f">
+          <AttributeID>Certificate ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="09416fc9-80b6-4303-9651-049016d1320e">
+          <AttributeID>Genre ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ffc385e6-77e2-4481-a702-79e70540301b">
+      <ID>Film 1</ID>
+      <Name>Film 1</Name>
+      <DimensionID>Film 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="bcc52fa8-f975-45c9-a143-f06795521a8d">
+          <AttributeID>Title</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f7d074e8-a2dd-4cbd-8a4b-08d2c15468d8">
+          <AttributeID>Oscar Nominations</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="60de7d78-36bd-4eef-8085-a82e92a241c4">
+          <AttributeID>Oscar Wins</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e186df05-d71c-4102-9ba6-b946820c96a3">
+          <AttributeID>Genre ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a49e7357-ae68-48c9-b195-414bfd4fe799">
+          <AttributeID>Genre</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6b47c536-5b20-49d7-86eb-d48fa33c632a">
+          <AttributeID>Certificate ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="988b239a-cf04-442d-b92f-b34f31c3f941">
+          <AttributeID>Certificate</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="181e7a7f-68a6-4302-ab06-8148969c08a2">
+          <AttributeID>Language ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e173ebbe-61ba-4f61-8058-0d97e414b173">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="06ea1192-035f-4ff2-a2e0-0f821b994963">
+          <AttributeID>Director ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c21d67f0-8970-4dfc-a917-6cc1f92837a9">
+          <AttributeID>Studio ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="c3455df5-0d55-4461-9c33-5583bbab5008">
+      <ID>Genre</ID>
+      <Name>Genre</Name>
+      <DimensionID>Genre</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c878ba34-c1a2-47ff-b6ae-99227b36e86f">
+          <AttributeID>Genre ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ed2aeb09-a874-49e6-8d1c-82a1ffc1c4cd">
+      <ID>Certificate</ID>
+      <Name>Certificate</Name>
+      <DimensionID>Certificate</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c0cd76f4-a9d5-4c0b-8a20-8ba461c1abd1">
+          <AttributeID>Certificate ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="09f1ffc4-8652-4a15-af03-19f0e8aa8619">
+      <ID>Language</ID>
+      <Name>Language</Name>
+      <DimensionID>Language</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="59a67856-1e04-45e8-aef9-c33a17f79d7a">
+          <AttributeID>Language ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="73850e1f-b9fc-49c0-b266-7fb72e4b7460">
+      <ID>Country</ID>
+      <Name>Country</Name>
+      <DimensionID>Country</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8baed4bb-3c18-47e5-9ca9-70bf889a1d19">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="35fa1720-5237-4121-81f8-e1cac2d5ee77">
+      <ID>Director</ID>
+      <Name>Director</Name>
+      <DimensionID>Director</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="24b16d67-2c70-4004-adfa-6702afd00e43">
+          <AttributeID>Director ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="7e614cc4-c25f-46f5-acb6-118ad5594957">
+      <ID>Studio</ID>
+      <Name>Studio</Name>
+      <DimensionID>Studio</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c9128486-88fe-4003-9c56-8a5f8a27e092">
+          <AttributeID>Studio ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="14fed490-e849-40b9-bf72-c211ca681942">
+      <ID>Studio 1</ID>
+      <Name>Studio 1</Name>
+      <DimensionID>Studio 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0097f1dd-e626-43d5-a35b-2196d37a4c17">
+          <AttributeID>Studio ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b038bb64-0b5c-4e31-a6de-b51ca3ba73ed">
+      <ID>Certificate 1</ID>
+      <Name>Certificate 1</Name>
+      <DimensionID>Certificate 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8fce444e-edc9-47a2-981a-b5d2c39fc0db">
+          <AttributeID>Certificate ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="cfc0739d-71f0-48e1-ad4f-c66a017af3a6">
+      <ID>Country 1</ID>
+      <Name>Country 1</Name>
+      <DimensionID>Country 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="42773e7f-a9ba-455d-83b9-96daba09ae74">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="c364453f-5f37-47ae-858b-94b10d4c7261">
+      <ID>Role</ID>
+      <Name>Role</Name>
+      <DimensionID>Role</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="bc8ad0f2-4ad5-462f-b4af-5010a512b600">
+          <AttributeID>Role ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b9a0e035-4ed8-4542-9986-6ed84426b743">
+          <AttributeID>Film ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5cc669a6-e3a8-4953-a354-714075f08615">
+      <ID>Genre 1</ID>
+      <Name>Genre 1</Name>
+      <DimensionID>Genre 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b64b064d-7ecc-483a-a5aa-4ebf9788ee88">
+          <AttributeID>Genre ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="0bc2c82c-5c7d-42a9-b4c7-bf5bfd53a48b">
+      <ID>Director 1</ID>
+      <Name>Director 1</Name>
+      <DimensionID>Director 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="517b84a4-f741-4328-917b-af9ac08828c9">
+          <AttributeID>Director ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="826606ac-7419-4257-9612-5f020ce92662">
+      <ID>Film - Studio</ID>
+      <Name>Film - Studio</Name>
+      <DimensionID>Studio 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4351d3a7-3573-4bf4-83d4-76a7abdc3fce">
+          <AttributeID>Studio ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b091c45f-1450-4e61-affd-8e533c361d1c">
+      <ID>Film - Director</ID>
+      <Name>Film - Director</Name>
+      <DimensionID>Director 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b8db6b78-97dc-4cdb-98ea-5607a2fab3ae">
+          <AttributeID>Director ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="289cc1d7-6a60-4e35-b273-8b082aa96f4e">
+      <ID>Film - Country</ID>
+      <Name>Film - Country</Name>
+      <DimensionID>Country 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f6c992d9-57a7-42aa-bdb9-5579d16374bd">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="85e3f749-7e55-49ec-b18c-decefa278402">
+      <ID>Film - Certificate</ID>
+      <Name>Film - Certificate</Name>
+      <DimensionID>Certificate 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="af6c08bc-5b75-4acc-b148-124269c5e622">
+          <AttributeID>Certificate ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="0b09080b-206d-46a5-b816-b9189be39848">
+      <ID>Film - Genre</ID>
+      <Name>Film - Genre</Name>
+      <DimensionID>Genre 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="92948830-53ed-4fce-a970-301d33537961">
+          <AttributeID>Genre ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="6429ae1c-444a-4f57-8b08-2554d2e737bb">
+      <ID>Film - Studio 1</ID>
+      <Name>Film - Studio 1</Name>
+      <DimensionID>Film 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0b35e1dc-2dda-47b3-add4-f287b5c9251b">
+          <AttributeID>Title</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2185094c-0637-4384-aa68-9b76ed4914e9">
+          <AttributeID>Oscar Nominations</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d2acc4fd-fe05-462a-bab1-6de4d6e8c5c5">
+          <AttributeID>Oscar Wins</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="275b924b-1bb3-4434-8b39-8e499d15c609">
+          <AttributeID>Genre ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4f2a1056-20d9-4884-ad6c-ffc28164fb09">
+          <AttributeID>Genre</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0f0d3680-4b0f-46e8-9046-96f33fde6dd3">
+          <AttributeID>Certificate ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="60f90483-5ceb-40dd-ab62-2947d49c4bd1">
+          <AttributeID>Certificate</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="84b72b1b-bdf5-4bf9-b225-2cf2e1da4b05">
+          <AttributeID>Language ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c134855d-590c-4d78-b106-1fedfa2ba316">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8588c7e5-d5d8-44bf-beec-b6d2e72aa7ed">
+          <AttributeID>Director ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ca339a62-634a-4ed2-82b2-5bcd60e90078">
+          <AttributeID>Studio ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="3fcfbc1c-b043-4f56-a78d-bbb669a8a834">
+      <ID>Film - Director 1</ID>
+      <Name>Film - Director 1</Name>
+      <DimensionID>Film 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="67a554b3-9fa8-46e6-8e5a-1680a6c87d29">
+          <AttributeID>Title</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6af964bb-65d3-4a70-b0ee-6c3e48d42448">
+          <AttributeID>Oscar Nominations</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5e6ee4f6-b3e2-44c6-8b3e-dd9e6151ec41">
+          <AttributeID>Oscar Wins</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="00a8482c-c108-4309-b264-2c21053efe1f">
+          <AttributeID>Genre ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="516c7b80-faad-402c-b654-b030d3634bdb">
+          <AttributeID>Genre</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fd79d4f9-438b-42cc-b539-1f5b4ef52b25">
+          <AttributeID>Certificate ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5951680f-e2da-4843-8042-2589d36d437f">
+          <AttributeID>Certificate</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9fa4183b-e65e-45ad-b7fd-b356666de585">
+          <AttributeID>Language ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f065483a-3478-43f4-ac80-de8b5a7bfa0a">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2dd6edd5-9eb9-4535-a840-6515a74ec5d0">
+          <AttributeID>Director ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f6a26b6a-873d-4950-910d-8b9b96987de0">
+          <AttributeID>Studio ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="74753fdd-d8f7-44e9-a3a8-7e2e44163b5f">
+      <ID>Film - Country 1</ID>
+      <Name>Film - Country 1</Name>
+      <DimensionID>Film 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="792edbc6-ba18-4221-8d2b-6765074929e7">
+          <AttributeID>Title</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="93202151-cba1-45e7-9d31-d23a39831cce">
+          <AttributeID>Oscar Nominations</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7914fa68-6003-44f5-8b45-d431289d837c">
+          <AttributeID>Oscar Wins</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2c4d28e1-a226-439d-9720-5370a0232e96">
+          <AttributeID>Genre ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8a30c66d-ea61-4e19-8a50-d505da2c958a">
+          <AttributeID>Genre</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6be6c622-2447-42b3-af6e-40a93a343aa2">
+          <AttributeID>Certificate ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="db5bbb13-9cb5-4387-bd4c-1393009801d2">
+          <AttributeID>Certificate</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="39ea463d-c789-4c8d-a82a-50088b4dcf6e">
+          <AttributeID>Language ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3771a7e2-b160-49a9-bbcb-9e8f40f75ddc">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="28af6fd2-55c5-4094-8dbd-d5696f4696c4">
+          <AttributeID>Director ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5dfbebfb-81f3-45e4-b124-c7cbef7a202a">
+          <AttributeID>Studio ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="81a2b272-b147-4e44-95f1-84da02fdbc7f">
+      <ID>Film - Language</ID>
+      <Name>Film - Language</Name>
+      <DimensionID>Film 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c9973411-3398-4651-8442-66fa517045e4">
+          <AttributeID>Title</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6afc5874-2027-4ca9-b29b-f86974961176">
+          <AttributeID>Oscar Nominations</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e0dac91f-9b6c-4c0d-9282-2a7f41c79211">
+          <AttributeID>Oscar Wins</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c40b3c33-7c45-4ad7-98fb-b6b07a66252b">
+          <AttributeID>Genre ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7089e8ac-9e2f-46a6-98db-0130c173c900">
+          <AttributeID>Genre</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="548edfb0-0975-465a-aaa8-e4910488ea5a">
+          <AttributeID>Certificate ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="464cfa8f-cb55-4945-9567-04c9cbc8509a">
+          <AttributeID>Certificate</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7e32fbab-797f-4018-833e-682ea8e00215">
+          <AttributeID>Language ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2a399776-2834-4256-ae03-2236c0f9a9eb">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="93d56d45-6c2e-4f95-81fc-718a890aaeae">
+          <AttributeID>Director ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="78409eae-a6dc-4e05-981a-7603268062a7">
+          <AttributeID>Studio ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="a1d9dd7e-39b0-4cc4-b62c-dbd0338b54da">
+      <ID>Film - Certificate 1</ID>
+      <Name>Film - Certificate 1</Name>
+      <DimensionID>Film 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="553f03dc-80ad-4d5e-85e9-c5edcc1cb5a0">
+          <AttributeID>Title</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1c326c64-0c4e-4b25-8aff-652d5e2ee015">
+          <AttributeID>Oscar Nominations</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a8da5197-f3e3-4e3c-a925-c24173d3ed2b">
+          <AttributeID>Oscar Wins</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3365731a-5cfb-4ef0-89e4-cec75b77f147">
+          <AttributeID>Genre ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4865a3ee-6d3a-437c-a4dc-22cb66035324">
+          <AttributeID>Genre</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b9e869bc-177e-4eef-9fdc-bb50e069d7cf">
+          <AttributeID>Certificate ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a384bb52-5efc-4fe4-a03d-b4fd2aa37edf">
+          <AttributeID>Certificate</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1f580517-6901-49f4-8a4b-a260550d82eb">
+          <AttributeID>Language ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5e6b511c-deea-463a-9299-d2afbc42c62e">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3e8bb7b5-3daa-4d62-9dfb-4d8f96031230">
+          <AttributeID>Director ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8665a2ef-8822-40f1-9389-ed3bd72b24d1">
+          <AttributeID>Studio ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="76496121-b5bf-4403-b7e8-79b4ee11d85c">
+      <ID>Film - Genre 1</ID>
+      <Name>Film - Genre 1</Name>
+      <DimensionID>Film 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="00ef4475-a8eb-4962-9a41-11833f645e84">
+          <AttributeID>Title</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0af6df99-2f60-4a37-b60e-389c63ac6eaa">
+          <AttributeID>Oscar Nominations</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1eaad7ae-40a2-44c7-a05f-62d99dccfa94">
+          <AttributeID>Oscar Wins</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e1a49998-ef79-4699-a2dc-c2014a7a1a6b">
+          <AttributeID>Genre ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0adec252-954e-4f85-a265-550046b2bc6c">
+          <AttributeID>Genre</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="68bd0718-aaf4-44aa-9dee-b2714d4e1f8b">
+          <AttributeID>Certificate ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0f5fd170-7fc8-42c7-a842-60dd576d69c5">
+          <AttributeID>Certificate</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d221c6ea-b56c-4e50-ab05-c18acc48f0e4">
+          <AttributeID>Language ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="96e30a7a-0b89-4cbe-b086-49312a294488">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d3ba42f6-ce44-48ef-b957-48a2e1edc330">
+          <AttributeID>Director ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f5407060-67eb-4922-945c-b054ff2b1b18">
+          <AttributeID>Studio ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="ad002c6c-ffec-4c99-a46a-fdd7baa8abd8">
+      <ID>Film</ID>
+      <Name>Film</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="8b71e574-594a-40c9-96c9-2d44d2d05575">
+          <ID>Run Time Minutes</ID>
+          <Name>Run Time Minutes</Name>
+          <Source dwd:design-time-name="21b31dae-5173-44ee-a872-a09afdaafc5d">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="61723366-6b85-411f-aeef-64a2008d7682">
+              <TableID>dbo_Film</TableID>
+              <ColumnID>RunTimeMinutes</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d877db46-45a9-4297-a726-5714ecc64a62">
+          <ID>Budget Dollars</ID>
+          <Name>Budget Dollars</Name>
+          <Source dwd:design-time-name="47898cd4-6a88-4a94-9a01-ece4f9d20bfa">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fc385f17-f239-4185-bcfd-08e96b88a362">
+              <TableID>dbo_Film</TableID>
+              <ColumnID>BudgetDollars</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="680ea4f4-48df-43d4-882a-3f35b9dfd836">
+          <ID>Box Office Dollars</ID>
+          <Name>Box Office Dollars</Name>
+          <Source dwd:design-time-name="b95b54c8-8e6c-4043-8a45-1b268366b54f">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f3743ed1-f3bf-4f77-b5a4-ace19b4f888d">
+              <TableID>dbo_Film</TableID>
+              <ColumnID>BoxOfficeDollars</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3d3fa7fa-03f5-4c98-94d3-512c9d930231">
+          <ID>Oscar Nominations</ID>
+          <Name>Oscar Nominations</Name>
+          <Source dwd:design-time-name="a70d9c02-afc4-472f-b365-9c8ea087dcda">
+            <DataType>UnsignedInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0811c19f-ebbc-4234-ba7f-35950c8c718c">
+              <TableID>dbo_Film</TableID>
+              <ColumnID>OscarNominations</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8b46e847-6aa4-405d-a5a0-fa9c225243cf">
+          <ID>Oscar Wins</ID>
+          <Name>Oscar Wins</Name>
+          <Source dwd:design-time-name="9d81b952-cc1b-4325-8c92-8402fc781452">
+            <DataType>UnsignedInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="424dcd94-5263-40a8-8068-14d6a393f677">
+              <TableID>dbo_Film</TableID>
+              <ColumnID>OscarWins</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1a0bbe9b-621e-441b-a11c-7ab003eb0eab">
+          <ID>Film カウント</ID>
+          <Name>Film カウント</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="6324cab7-1264-4f8b-be36-d81292978ced">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="ed2805a0-38f2-47c4-8ac0-b30671acbb36">
+              <TableID>dbo_Film</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="f64217cb-e1f9-4462-9c2c-f52f43018fd4">
+          <CubeDimensionID>Film</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c3a96098-ba99-406e-9a93-792f67325568">
+              <AttributeID>Film ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3b3192e3-cf09-4861-b38b-d36476f7b9b5">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f3d2fa52-b0a0-4128-9802-aba108de44d3">
+                    <TableID>dbo_Film</TableID>
+                    <ColumnID>FilmID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2443a592-ab6b-4187-9232-c6059795eafd">
+          <CubeDimensionID>Film 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d80e86c6-196f-4764-a58f-2016f6a5f86e">
+              <AttributeID>Title</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="11ff3237-8756-47a2-bc4c-63c4a9b7a8cb">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1fe0b7f9-2c30-4c7e-94b8-adc0565c5fed">
+                    <TableID>dbo_Film</TableID>
+                    <ColumnID>Title</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="f8b0f3cc-76ad-47cf-8b47-875c3b025d91">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b4f2cc0c-83e5-4be3-b412-acb903fe0010">
+                    <TableID>dbo_Film</TableID>
+                    <ColumnID>FilmID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e1dfcd38-60d9-436f-810f-fa87c533b28f">
+          <CubeDimensionID>Genre</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ff9acb5d-5197-435f-b9a2-b1b557987edb">
+              <AttributeID>Genre ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="bc89dfcc-22eb-419e-9992-8b31e9ec3fce">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0b40471f-e885-4285-b132-bba65ee3506c">
+                    <TableID>dbo_Film</TableID>
+                    <ColumnID>GenreID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b7a1b0dd-a88a-49c5-8758-f0b4b8d1393f">
+          <CubeDimensionID>Certificate</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="032686c5-9318-473e-9772-f1c6e4414630">
+              <AttributeID>Certificate ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="29473355-832a-498c-8e9d-2b2f0f6696aa">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="97fe7728-bcc1-44c9-b837-f973447f19b0">
+                    <TableID>dbo_Film</TableID>
+                    <ColumnID>CertificateID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="84549972-e0ab-4340-9a7b-d065480e9920">
+          <CubeDimensionID>Language</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ba941d49-756e-4764-aa87-24a0482118d9">
+              <AttributeID>Language ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9fd51486-6c97-464e-971c-7153e4ac0546">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f504c340-b6d0-4e36-a32c-d3500e0e8b92">
+                    <TableID>dbo_Film</TableID>
+                    <ColumnID>LanguageID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4fee0366-eff4-4639-8126-6bcfb5391f97">
+          <CubeDimensionID>Country</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6e23c1e7-83a6-4f7f-a556-a7abb003455e">
+              <AttributeID>Country ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1e19f1f4-7e72-4167-a751-429b3f3bf999">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="14b5b3af-ba7d-4177-a0d4-6b4593a1c6bc">
+                    <TableID>dbo_Film</TableID>
+                    <ColumnID>CountryID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0a67e6aa-ba0c-4974-8844-53f8058d7d51">
+          <CubeDimensionID>Director</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3462a76c-4cbc-4abb-9731-76106fab77f6">
+              <AttributeID>Director ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="87a236d6-030b-430b-b563-e31218a4d51a">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8c982257-45f5-4709-9cbd-1fe8c3fbe1cd">
+                    <TableID>dbo_Film</TableID>
+                    <ColumnID>DirectorID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f117b1fb-a57a-4421-8446-96e4fcc22f9f">
+          <CubeDimensionID>Studio</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="53f4668f-3457-43b7-bd36-64d936e30f54">
+              <AttributeID>Studio ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cc693545-8e1b-48fb-ab6a-60a01067ed0e">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fd51a405-8059-42af-869e-bd5e972da5a6">
+                    <TableID>dbo_Film</TableID>
+                    <ColumnID>StudioID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="4031c995-5dff-4925-b765-7020ff7b61c5">
+          <CubeDimensionID>Studio 1</CubeDimensionID>
+          <MeasureGroupID>Studio</MeasureGroupID>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="834a4a2e-6270-4a4f-ad8e-40958425f5d9">
+          <CubeDimensionID>Certificate 1</CubeDimensionID>
+          <MeasureGroupID>Certificate</MeasureGroupID>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="f53eaaed-7f6c-4028-b149-d50ce2360935">
+          <CubeDimensionID>Country 1</CubeDimensionID>
+          <MeasureGroupID>Country</MeasureGroupID>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="041baaa7-820e-4f61-b4b8-86df0543b49a">
+          <CubeDimensionID>Genre 1</CubeDimensionID>
+          <MeasureGroupID>Genre</MeasureGroupID>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="5b8095a0-98ca-4259-ae43-11c45bce2800">
+          <CubeDimensionID>Director 1</CubeDimensionID>
+          <MeasureGroupID>Director</MeasureGroupID>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="fcfae510-f55a-4229-9756-8d7a6eb25533">
+          <CubeDimensionID>Film - Studio</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ae3f2f46-9f5f-4af4-93ef-e7737bf01b18">
+              <AttributeID>Studio ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Film</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Studio ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="31e050b4-66f3-499c-be41-33973b0a28cd">
+          <CubeDimensionID>Film - Director</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e65b0e00-f27d-4159-a380-704b0509eb04">
+              <AttributeID>Director ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Film</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Director ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="6eb6195b-99fc-4ed4-bf86-791cc31dae23">
+          <CubeDimensionID>Film - Country</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="75a54360-134c-4846-a2a5-9645b14197a1">
+              <AttributeID>Country ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Film</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Country ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="1814050d-4bc8-4b17-b50b-1a362fa8fcc1">
+          <CubeDimensionID>Film - Certificate</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="617eba76-12f0-424c-96b2-a7763d91c189">
+              <AttributeID>Certificate ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Film</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Certificate ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="a55667fe-3958-468c-bb49-eca7823a67b3">
+          <CubeDimensionID>Film - Genre</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e36208cf-e237-4213-ab7f-6f02be00f3aa">
+              <AttributeID>Genre ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Film</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Genre ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="3a8bd4ad-4c5d-4958-bd79-623718bd0ea7">
+      <ID>Studio</ID>
+      <Name>Studio</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="35f30988-ec3e-4fd1-8e43-7d81d23982ed">
+          <ID>Studio カウント</ID>
+          <Name>Studio カウント</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="2e8a503f-8175-4218-8f25-9b369f1399b7">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="fa1de1c0-47dc-4557-900d-388a0b3cc464">
+              <TableID>dbo_Studio</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="d4d0940c-7e95-4068-859e-0ed6cd458223">
+          <CubeDimensionID>Studio</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ef31275a-2957-48dd-907e-409d0a78ad71">
+              <AttributeID>Studio ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2f8d458b-755c-43cf-b603-8e22dc4a9279">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c69abed5-2e8f-41cc-a35f-fb4ac1236035">
+                    <TableID>dbo_Studio</TableID>
+                    <ColumnID>StudioID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="dc22e366-c9a6-448f-9511-c2e751f38fff">
+          <CubeDimensionID>Studio 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="dcdd6963-c375-4804-861b-4c130a3d9087">
+              <AttributeID>Studio ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5e36a7b6-8f1f-4534-94a3-e1df219f1d91">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6ba1a7e3-640b-413e-9ccc-32e7a8c5ad9d">
+                    <TableID>dbo_Studio</TableID>
+                    <ColumnID>StudioID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="a2c352f3-3c2e-4dfa-bf10-34a0db757705">
+      <ID>Certificate</ID>
+      <Name>Certificate</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="3622b455-3375-4141-9897-dd4ff0de463e">
+          <ID>Certificate カウント</ID>
+          <Name>Certificate カウント</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="d8be4fc2-63c9-4e75-b20d-71612e408cba">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="b26d86db-31eb-4331-8135-4bd2d5f5252d">
+              <TableID>dbo_Certificate</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="75215af8-1421-4a9d-bbe5-cdf2633e9d00">
+          <CubeDimensionID>Certificate</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8eb72441-64e8-4301-bcee-93a0bcca5cbb">
+              <AttributeID>Certificate ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d6b7d185-dc8c-4f4c-b8c0-e094596cd7c0">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="44a3fa59-9804-49e7-b6de-cc872c5238ae">
+                    <TableID>dbo_Certificate</TableID>
+                    <ColumnID>CertificateID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6466e76f-1c26-4e50-bc82-7fe61131909f">
+          <CubeDimensionID>Certificate 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f07aba45-4a17-427b-8297-f31ab92dbf54">
+              <AttributeID>Certificate ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="32a37f66-9708-4a2b-8b01-5d818d2f09d2">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9cff5535-189d-4727-9817-9b56b8708e2a">
+                    <TableID>dbo_Certificate</TableID>
+                    <ColumnID>CertificateID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="3dd3bf60-075a-4ff3-a55e-e5e557f9de57">
+      <ID>Country</ID>
+      <Name>Country</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="4ca165d2-ef80-4a34-9e3f-480c7e76cce9">
+          <ID>Country カウント</ID>
+          <Name>Country カウント</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="f530cd1b-7309-45d1-bece-4df1722c3c53">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="52b532b0-0caf-4bec-aba8-8e64efc72e2d">
+              <TableID>dbo_Country</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="0e15ec9b-3ab6-4721-93fb-92d7db8c0229">
+          <CubeDimensionID>Country</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c8af58d4-ca48-4f6f-b554-35625878e8a8">
+              <AttributeID>Country ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8cd57a33-4d28-4a14-80df-344f775e0c0f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7e78cb55-5f09-4812-b489-d8d59d4c8229">
+                    <TableID>dbo_Country</TableID>
+                    <ColumnID>CountryID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="36909066-4a1f-41dd-856c-9985bdabc03f">
+          <CubeDimensionID>Country 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="80c69689-d80a-43d1-8962-a8cb443b2a04">
+              <AttributeID>Country ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e160c12e-ba1e-48e9-94bf-2432e4a13fed">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1a6aae73-91fa-4a38-b3c7-d80b335ca706">
+                    <TableID>dbo_Country</TableID>
+                    <ColumnID>CountryID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="9c977ac2-02a5-4188-a9c2-40f6a63250aa">
+      <ID>Role</ID>
+      <Name>Role</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="84384edf-9563-401c-95be-1b4f04c6956b">
+          <ID>Actor ID</ID>
+          <Name>Actor ID</Name>
+          <Source dwd:design-time-name="618bdfbf-aba3-406e-b81f-124c8123fb7e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d7df0eda-7e41-4fe2-93a2-4f39258d12be">
+              <TableID>dbo_Role</TableID>
+              <ColumnID>ActorID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3fc9de4c-2df3-496b-b187-73a805d3cafe">
+          <ID>Role カウント</ID>
+          <Name>Role カウント</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="762abb32-c139-409b-a2da-6f3556549d1d">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="3d45b917-70cb-4e1b-bc1d-d1d5a71aa9ae">
+              <TableID>dbo_Role</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="ab5ebc29-7850-4af0-8132-a15c67e9ef80">
+          <CubeDimensionID>Role</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="dcf9c016-e7db-4068-b0a3-662e6bb8f470">
+              <AttributeID>Role ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b69cc2fc-3ace-477e-902d-918f2c5cb71c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="003b142f-21ce-40e2-9d46-ef157ec3144e">
+                    <TableID>dbo_Role</TableID>
+                    <ColumnID>RoleID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c8b7f200-d6df-4b2a-a9a5-aeea1f42282a">
+          <CubeDimensionID>Film</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="83a51def-9b8c-4ac0-999c-4bb1645f4842">
+              <AttributeID>Film ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c0ebb423-4c94-4c59-86c0-f9269d4ff098">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9df35f16-7c3b-4e6a-9b8f-ff149f206873">
+                    <TableID>dbo_Role</TableID>
+                    <ColumnID>FilmID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="3c45d0f9-948e-4254-a73d-b0040b67e961">
+          <CubeDimensionID>Film - Studio 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e3870d60-50b5-4199-bc28-37fb9c2c283e">
+              <AttributeID>Studio ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Film</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Studio ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="1ed5af8b-f3af-46c9-abfe-b86866951eff">
+          <CubeDimensionID>Studio</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="118cb5e5-5a57-47cd-b44b-d947472b7f33">
+              <AttributeID>Studio ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Film</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Studio ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="3b8209cc-fc66-4541-bf27-e4ef4819724d">
+          <CubeDimensionID>Film - Studio</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="65cf0847-eb90-4b3e-b953-a6fb5b0389d2">
+              <AttributeID>Studio ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Film</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Studio ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="4e9e38c1-69d9-4c95-ab40-05b1bf71147c">
+          <CubeDimensionID>Film - Director 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e0f7fc7f-430c-4707-b88a-161bd8209f87">
+              <AttributeID>Director ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Film</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Director ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="a9edf574-08be-4baf-8df3-7160759456c1">
+          <CubeDimensionID>Director</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="13b47328-162d-418a-9243-1098e91051ba">
+              <AttributeID>Director ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Film</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Director ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="20b70ed9-dd67-4168-abc7-e0452105c013">
+          <CubeDimensionID>Film - Director</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e34bc34b-09d0-424f-8bec-aa29afd68dda">
+              <AttributeID>Director ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Film</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Director ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="a296d4b0-c9bc-432d-b00b-30d6d4e40038">
+          <CubeDimensionID>Film - Country 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="59d63a60-2b30-48e3-92c2-db5d6f8bd73c">
+              <AttributeID>Country ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Film</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Country ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="9fb0ef90-4b7b-4b66-a8bc-266d6f8af9da">
+          <CubeDimensionID>Country</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1a53b421-40f2-488f-a1ba-23a8d6777c58">
+              <AttributeID>Country ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Film</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Country ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="43f87a5f-2bfc-4492-a891-82970d085414">
+          <CubeDimensionID>Film - Country</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2718f090-cb23-4c6e-8a1c-3c64775a20f0">
+              <AttributeID>Country ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Film</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Country ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="a3e99995-a679-4085-b863-dd26672706f6">
+          <CubeDimensionID>Film - Language</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6e1e39d7-0881-4004-a9a6-e596165a6e84">
+              <AttributeID>Language ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Film</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Language ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="fe696006-e0bd-4fcc-b7f8-e256497319ca">
+          <CubeDimensionID>Language</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="02e15f72-d2b9-4f71-9831-7f0120b34a4f">
+              <AttributeID>Language ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Film</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Language ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="0fd6bc97-d8ba-4157-987d-6b44bcbfcdb0">
+          <CubeDimensionID>Film - Certificate 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="209cd1c8-bc0d-46e9-a73e-c82a9b48c6b3">
+              <AttributeID>Certificate ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Film</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Certificate ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="ba701b64-7de9-42e9-ac0b-7838a63e5c8b">
+          <CubeDimensionID>Certificate</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9740684b-dd32-4cdb-acf1-3d5405f55db2">
+              <AttributeID>Certificate ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Film</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Certificate ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="b75b5dd1-e5c5-4896-9277-2558d52716ec">
+          <CubeDimensionID>Film - Certificate</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4e29e74f-08fb-4ac2-ac08-93323a9a8032">
+              <AttributeID>Certificate ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Film</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Certificate ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="e97e8eac-f04e-4c0b-8910-4207fc50b4d6">
+          <CubeDimensionID>Film - Genre 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="50c92e99-d95a-445a-9a7b-25df0bf201c1">
+              <AttributeID>Genre ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Film</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Genre ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="c7662219-fd93-4f37-8292-35b68b842a4c">
+          <CubeDimensionID>Genre</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="28b6fdb3-215f-471f-b4ae-e1553b02610e">
+              <AttributeID>Genre ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Film</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Genre ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="93057845-7edc-4ec5-ac39-379b07a48fe4">
+          <CubeDimensionID>Film - Genre</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9e9d09c1-44ec-4cd7-9317-9addc6cf0c61">
+              <AttributeID>Genre ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Film</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Genre ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="5042721f-3c79-4110-8a27-dde0807abf75">
+      <ID>Genre</ID>
+      <Name>Genre</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="df2573d5-69c5-4e7b-9555-2f8a4cdb8647">
+          <ID>Genre カウント</ID>
+          <Name>Genre カウント</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="d02d9318-e4fd-4de8-a2f0-c776c93c9871">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="6a259f0e-a036-4757-a5cf-d324da729cc0">
+              <TableID>dbo_Genre</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="1a02378b-34d1-4cb5-8c44-b4b4113f9ccf">
+          <CubeDimensionID>Genre</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7f48fec6-b08d-4d46-a602-237a9a0706e1">
+              <AttributeID>Genre ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1b07b789-2744-411f-82c8-e67bbbb5f449">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3f97d00b-0336-41ad-b172-454d25f90382">
+                    <TableID>dbo_Genre</TableID>
+                    <ColumnID>GenreID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="baac133e-3154-4c20-b875-7af96eaa65a1">
+          <CubeDimensionID>Genre 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a6440af4-4e5d-4053-b73f-7707d1e00066">
+              <AttributeID>Genre ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8fd77adf-2d19-474f-95d2-a943e576603e">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="07cb02c9-01e2-4ae6-b9d5-0d6a35bcbab9">
+                    <TableID>dbo_Genre</TableID>
+                    <ColumnID>GenreID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="f262e120-d65e-498d-a318-d0b7cff497fb">
+      <ID>Director</ID>
+      <Name>Director</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="68be1317-1a55-4204-b901-8d6de14f0cb6">
+          <ID>Director カウント</ID>
+          <Name>Director カウント</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="55ba5612-fc01-4822-ae0f-24048216511f">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="7728b112-6b96-4fc4-8e27-4fe9163f1b8f">
+              <TableID>dbo_Director</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="1a8ebed2-457a-4323-8b7a-d22911768a1f">
+          <CubeDimensionID>Director</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="44e12da6-8895-4b43-830b-36300e902488">
+              <AttributeID>Director ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="95fdb71d-f055-4bff-bc26-6f77e0ceb77b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1f1d8ed0-a707-4e1d-91a1-4eb2d057ee75">
+                    <TableID>dbo_Director</TableID>
+                    <ColumnID>DirectorID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7ee8c959-24a1-4983-ac66-11c9061d9190">
+          <CubeDimensionID>Director 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d913b4e4-76f0-4a2e-8380-c91fbfe51ebd">
+              <AttributeID>Director ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b8535555-3b6b-4dbc-a0a6-a1caba66ade8">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4c2106be-3117-4099-842b-0624e7a45f8a">
+                    <TableID>dbo_Director</TableID>
+                    <ColumnID>DirectorID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="791d3fa7-4128-46a8-9f32-d661c07af9a5">
+    <DataSourceViewID>Movies</DataSourceViewID>
+  </Source>
+</Cube>

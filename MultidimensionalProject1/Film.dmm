@@ -1,0 +1,267 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="908b7f9f-0227-46b6-bbee-d49314613871" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Film</ID>
+  <Name>Film</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_Film</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="4a41df37-0907-4bc1-aca3-ecc6dab07944">
+    <DataSourceViewID>Movies</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="875d642a-dc50-4dbe-83bb-9386797fecd3">
+      <ID>Certificate ID</ID>
+      <Name>Certificate ID</Name>
+      <Type>Long</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bc7ca974-dffe-43a4-b177-98f48efefbfe">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ac0a1211-8499-423e-94e5-73ba81ee3112">
+            <TableID>dbo_Film</TableID>
+            <ColumnID>CertificateID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8722925c-cc1e-467f-a4ec-c1c07e555b54">
+      <ID>Country ID</ID>
+      <Name>Country ID</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8ae3bc0c-c037-4a51-b5cd-40123cf1c462">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7ed6ee1f-1529-462b-84df-823e77561206">
+            <TableID>dbo_Film</TableID>
+            <ColumnID>CountryID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="6e16b5d8-ab2c-4d06-98cc-ae8dec042e65">
+      <ID>Film ID</ID>
+      <Name>Film ID</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d2780ba3-80fc-4dbe-875d-33bc61fc87cf">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f9a6eda9-073b-45e5-a29c-d4b0220cd2bd">
+            <TableID>dbo_Film</TableID>
+            <ColumnID>FilmID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="aef08ff1-6aa4-4bae-8747-f6f79f03f3b9">
+      <ID>Genre ID</ID>
+      <Name>Genre ID</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c49930ec-8eca-4673-9fe4-b5d201731056">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="626a9a38-ee1f-4e6e-ab34-6fb4f205cc47">
+            <TableID>dbo_Film</TableID>
+            <ColumnID>GenreID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="574b3a15-6053-4b3c-b380-b7be1c6db79b">
+      <ID>Language ID</ID>
+      <Name>Language ID</Name>
+      <Type>Long</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9689a52f-b6c0-4444-bd0c-e304fd5d3723">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="30fc0b3c-a570-4ea3-b725-3d5027c8f6e1">
+            <TableID>dbo_Film</TableID>
+            <ColumnID>LanguageID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="586709d3-c436-40a9-a645-ba93c2cb29e0">
+      <ID>Oscar Nominations</ID>
+      <Name>Oscar Nominations</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e6cdaf5b-c248-4873-b50f-c3f140684058">
+          <DataType>UnsignedTinyInt</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f07fc57d-7c30-4372-b669-1f54a46852de">
+            <TableID>dbo_Film</TableID>
+            <ColumnID>OscarNominations</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8cb8c80c-4c46-416c-ad74-c02edcf10a2a">
+      <ID>Oscar Wins</ID>
+      <Name>Oscar Wins</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e22cf9cb-b69b-416c-bd13-410cab6d8f09">
+          <DataType>UnsignedTinyInt</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6fd8928a-42cd-414f-9b85-caadce974529">
+            <TableID>dbo_Film</TableID>
+            <ColumnID>OscarWins</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9e2c124f-82ba-476c-ae5d-22afbe4c7e9f">
+      <ID>Run Time Minutes</ID>
+      <Name>Run Time Minutes</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2a83fd33-5910-4277-8b9f-69d6bc0868c5">
+          <DataType>SmallInt</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="59c01def-4621-46b3-b703-0abef188af09">
+            <TableID>dbo_Film</TableID>
+            <ColumnID>RunTimeMinutes</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="0bddd54c-865f-41c9-949f-ad19bccbd015">
+      <ID>Title</ID>
+      <Name>Title</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dc02d4e5-6243-4309-84b9-a187f0bd6469">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f2a45e3d-5408-4ed1-97ea-072014000af3">
+            <TableID>dbo_Film</TableID>
+            <ColumnID>Title</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="e583fe31-b08d-4186-85ad-7ea2173c2a0e">
+      <ID>Film</ID>
+      <Name>Film</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Decision_Trees</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="8676f795-a1e4-45a8-81df-7fab4c7dd3f1">
+          <ID>Certificate ID</ID>
+          <Name>Certificate ID</Name>
+          <SourceColumnID>Certificate ID</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="e43727fd-5cac-44d0-b90b-9d6d7ff6dcca">
+          <ID>Country ID</ID>
+          <Name>Country ID</Name>
+          <SourceColumnID>Country ID</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="de5fbbe6-360c-4b02-af79-83e38335cbb4">
+          <ID>Film ID</ID>
+          <Name>Film ID</Name>
+          <SourceColumnID>Film ID</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="ada6fcd6-bd2b-469e-936b-4e12e6cdc5eb">
+          <ID>Genre ID</ID>
+          <Name>Genre ID</Name>
+          <SourceColumnID>Genre ID</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="241000ca-0e4b-463d-98c0-6a5d559f1c4a">
+          <ID>Language ID</ID>
+          <Name>Language ID</Name>
+          <SourceColumnID>Language ID</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="130fb06b-d7a4-47f4-b919-e50cd542a587">
+          <ID>Oscar Nominations</ID>
+          <Name>Oscar Nominations</Name>
+          <SourceColumnID>Oscar Nominations</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="b5257749-70df-44c9-88f7-25f7b4d04fdb">
+          <ID>Oscar Wins</ID>
+          <Name>Oscar Wins</Name>
+          <SourceColumnID>Oscar Wins</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="4b86123c-1ae5-46c5-9835-e0a334ae1d7a">
+          <ID>Title</ID>
+          <Name>Title</Name>
+          <SourceColumnID>Title</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>

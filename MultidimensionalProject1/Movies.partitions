@@ -1,0 +1,145 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2276bfb1-7ad9-4de3-b5fa-cb64e1b9c4c1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Movies</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Film</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="4979a687-2d57-470e-a5a5-899191ddc531">
+          <ID>Film</ID>
+          <Name>Film</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ad94f4c8-1fe8-4013-bc6b-976a92f8eb4b">
+            <DataSourceViewID>Movies</DataSourceViewID>
+            <TableID>dbo_Film</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Studio</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="3e649860-7a24-4ea9-a383-6e9070a5da0a">
+          <ID>Studio</ID>
+          <Name>Studio</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6a5d2277-ed4d-4173-b2d1-8bcdf9cb3381">
+            <DataSourceViewID>Movies</DataSourceViewID>
+            <TableID>dbo_Studio</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Certificate</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="9c9dcbfc-647f-4451-83aa-7c83ca3f7e70">
+          <ID>Certificate</ID>
+          <Name>Certificate</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="3b163bc3-51ee-4bd8-bcfa-22665e3a1af0">
+            <DataSourceViewID>Movies</DataSourceViewID>
+            <TableID>dbo_Certificate</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Country</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="495e6977-9ca2-4eb7-89e7-e3f22cff43ce">
+          <ID>Country</ID>
+          <Name>Country</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c0c7addc-9c31-40d0-be66-2d274b13f2db">
+            <DataSourceViewID>Movies</DataSourceViewID>
+            <TableID>dbo_Country</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Role</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="514965a5-662e-4570-9b7d-5e8db540d058">
+          <ID>Role</ID>
+          <Name>Role</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e5adc5fb-9ec2-4487-b6b9-763b6c91a222">
+            <DataSourceViewID>Movies</DataSourceViewID>
+            <TableID>dbo_Role</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Genre</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="d97c8f74-7dc4-4158-b2a1-52d93254daa7">
+          <ID>Genre</ID>
+          <Name>Genre</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f260efda-2d1c-4a5a-9a4a-c213a2cf1f5d">
+            <DataSourceViewID>Movies</DataSourceViewID>
+            <TableID>dbo_Genre</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Director</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="5b5adf62-fe4c-4531-b9e4-11331467631f">
+          <ID>Director</ID>
+          <Name>Director</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6790d20d-3e90-4efe-8e72-09d73fc80954">
+            <DataSourceViewID>Movies</DataSourceViewID>
+            <TableID>dbo_Director</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
